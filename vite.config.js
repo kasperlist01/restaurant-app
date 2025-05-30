@@ -3,5 +3,9 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
     plugins: [vue()],
-    base: '/restaurant-app/'
+    base: '/restaurant-app/',
+    build: {
+        outDir: 'dist',
+        assetsDir: 'assets'
+    }
 })
