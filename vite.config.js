@@ -5,7 +5,10 @@ export default defineConfig({
     plugins: [vue()],
     base: '/restaurant-app/',
     build: {
-        outDir: 'dist',
-        assetsDir: 'assets'
+        rollupOptions: {
+            output: {
+                manualChunks: undefined
+            }
+        }
     }
 })
